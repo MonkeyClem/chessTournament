@@ -44,6 +44,10 @@ class View :
             player_index = int(input(f"Sélectionnez (via l'index) le joueur {_ + 1}/{number_of_players}: ")) - 1
             selected_players.append(available_players[player_index])
         return selected_players
+    
+    def show_all_tournaments(self, tournaments):
+        for i, tournoi in enumerate(tournaments):
+            print(f"{i + 1}. {tournoi['name']} ({tournoi['beginning_date']} - {tournoi['date_fin']})")
 
   
     

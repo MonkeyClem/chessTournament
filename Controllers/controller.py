@@ -55,9 +55,12 @@ class Controller :
 
         selected_players_dicts = self.view.select_players(available_players, number_of_players)
         selected_players = [Player.from_dict(player) for player in selected_players_dicts]
-
         new_tournoi = Tournoi(name, location, beginning_date, end_date, description, number_of_rounds)
         new_tournoi.joueurs = selected_players
         data.setdefault("tournois", []).append(new_tournoi.to_dict())
         self.save_data(data)
         print("Tournoi ajouté avec succès!")
+
+    def show_all_tournaments(self):
+        data = self.load_data()
+        self.view.show_all_tournaments(data["tournois"])

@@ -21,11 +21,13 @@ def main():
     while True : 
         choix = view.show_menu()
         if choix == '1':
-            # ICI ON VA CREER UN TOURNOI
+            # DONE :  CREER UN TOURNOI
             controller.create_tournoi()
             pass
         elif choix == '2':
-            # ICI ON VA AFFICHER TOUS LES TOURNOIS, ET PERMETTRE A L'UTILISATEUR D'EN SELECTIONNER UN POUR AFFICHER LES DETAILS
+            # ICI ON VA AFFICHER TOUS LES TOURNOIS, ET PERMETTRE A L'UTILISATEUR
+            # D'EN SELECTIONNER UN POUR AFFICHER LES DETAILS
+            controller.show_all_tournaments()
             pass
         elif choix == '3':
             # DONE : AFFICHER TOUS LES JOUEURS
