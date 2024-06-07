@@ -22,12 +22,13 @@ def main():
         choix = view.show_menu()
         if choix == '1':
             # ICI ON VA CREER UN TOURNOI
+            controller.create_tournoi()
             pass
         elif choix == '2':
             # ICI ON VA AFFICHER TOUS LES TOURNOIS, ET PERMETTRE A L'UTILISATEUR D'EN SELECTIONNER UN POUR AFFICHER LES DETAILS
             pass
         elif choix == '3':
-            # DONE VA AFFICHER TOUS LES JOUEURS
+            # DONE : AFFICHER TOUS LES JOUEURS
             controller.show_all_players()
             pass
         elif choix == '4':

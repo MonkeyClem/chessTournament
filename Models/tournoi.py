@@ -1,61 +1,71 @@
 from datetime import datetime
 
-
-class Tournoi:
-    def __init__(self, nom, lieu, date_debut, date_fin, description, nombre_tours=4):
-        self.nom = nom
-        self.lieu = lieu
-        self.date_debut = datetime.strptime(date_debut, "%Y-%m-%d")
-        self.date_fin = datetime.strptime(date_fin, "%Y-%m-%d")
-        self.nombre_tours = nombre_tours
-        self.tour_actuel = 0
-        self.tours = []
-        self.joueurs = []
-        self.description = description
-
-    def ajouter_joueur(self, joueur):
-        self.joueurs.append(joueur)
-
-    def commencer_tour(self):
-        if self.tour_actuel < self.nombre_tours:
-            self.tour_actuel += 1
-            tour = Tour(f'Tour {self.tour_actuel}')
-            self.tours.append(tour)
-        else:
-            print("Le nombre maximum de tours est atteint.")
-
-    def terminer_tour_actuel(self):
-        if self.tours:
-            self.tours[-1].terminer_tour()
-
-    def __str__(self):
-        tours_str = "\n".join(str(tour) for tour in self.tours)
-        return (f"Tournoi: {self.nom}\n"
-                f"Lieu: {self.lieu}\n"
-                f"Date de début: {self.date_debut.strftime('%Y-%m-%d')}\n"
-                f"Date de fin: {self.date_fin.strftime('%Y-%m-%d')}\n"
-                f"Nombre de tours: {self.nombre_tours}\n"
-                f"Tour actuel: {self.tour_actuel}\n"
-                f"Joueurs: {', '.join(self.joueurs)}\n"
-                f"Description: {self.description}\n"
-                f"Tours:\n{tours_str}\n")
-
 class Player:
-    def __init__(self, lastname,firtsname, birthdate):
+    def __init__(self, lastname, firstname, birthdate):
         self.lastname = lastname
-        self.firtsname = firtsname
+        self.firstname = firstname
         self.birthdate = birthdate
 
     def to_dict(self):
         return {
             "lastname": self.lastname,
-            "firstname": self.firtsname,
-            "birthdate": self.birthdate,
+            "firstname": self.firstname,
+            "birthdate": self.birthdate
         }
-    
+
     @staticmethod
     def from_dict(data):
-        return Player(data["lastname"], data["firstname"], data["birthdate"])
+        return Player(
+            lastname=data["lastname"],
+            firstname=data["firstname"],
+            birthdate=data["birthdate"]
+        )
+ 
+    # @staticmethod
+    # def from_dict(data):
+    #     return Player(data["lastname"], data["firstname"], data["birthdate"])
+
+class Tournoi:
+    def __init__(self, name, location, beginning_date, end_date, description, number_of_rounds=4):
+        self.name = name
+        self.place = location
+        self.beginning_date = datetime.strptime(beginning_date, "%Y-%m-%d")
+        self.date_fin = datetime.strptime(end_date, "%Y-%m-%d")
+        self.nombre_tours = number_of_rounds
+        self.tour_actuel = 0
+        self.tours = []
+        self.joueurs = []
+        self.description = description
+
+    def to_dict(self):
+        return {
+            "name": self.name,
+            "place": self.place,
+            "beginning_date": self.beginning_date.strftime("%Y-%m-%d"),
+            "date_fin": self.date_fin.strftime("%Y-%m-%d"),
+            "nombre_tours": self.nombre_tours,
+            "tour_actuel": self.tour_actuel,
+            "tours": self.tours,
+            "joueurs": [player.to_dict() for player in self.joueurs],
+            "description": self.description
+        }
+
+    @staticmethod
+    def from_dict(data):
+        tournoi = Tournoi(
+            name=data["name"],
+            location=data["place"],
+            beginning_date=data["beginning_date"],
+            end_date=data["date_fin"],
+            description=data["description"],
+            number_of_rounds=data.get("nombre_tours", 4)
+        )
+        tournoi.tour_actuel = data.get("tour_actuel", 0)
+        tournoi.tours = data.get("tours", [])
+        tournoi.joueurs = [Player.from_dict(player) for player in data.get("joueurs", [])]
+        return tournoi
+
+
 
 class Match:
     def __init__(self, joueur1, score1, joueur2, score2):
