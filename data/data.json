@@ -1,0 +1,19 @@
+{
+    "joueurs": [
+        {
+            "lastname": "SMITH",
+            "firstname": "Alice",
+            "birthdate": 1995
+        },
+        {
+            "lastname": "DOE",
+            "firstname": "Bob",
+            "birthdate": 2000
+        },
+        {
+            "lastname": "JEULIN",
+            "firstname": "Cl\u00e9ment",
+            "birthdate": 1995
+        }
+    ]
+}
