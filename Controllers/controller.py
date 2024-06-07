@@ -11,8 +11,8 @@ from Models.tournoi import Player
 
 
 class Controller :
-    def __init__(self, vue):
-        self.vue = vue
+    def __init__(self, view):
+        self.view = view
 
     def load_data(self):
         if os.path.exists('data/data.json'):
@@ -25,10 +25,14 @@ class Controller :
             json.dump(data, file, indent=4)
 
     def create_player(self):
-        lastname, firstname, birthdate = self.vue.ask_player_information()
+        lastname, firstname, birthdate = self.view.ask_player_information()
         new_player = Player(lastname, firstname, birthdate)
         
         data = self.load_data()
         data["joueurs"].append(new_player.to_dict())
         self.save_data(data)
         print("Joueur ajouté avec succès!")
+
+    def show_all_players(self):
+        data = self.load_data()
+        self.view.show_all_players(data["joueurs"])

@@ -24,13 +24,14 @@ def main():
             # ICI ON VA CREER UN TOURNOI
             pass
         elif choix == '2':
-            # ICI ON VA AFFICHER TOUS LES TOURNOIS
+            # ICI ON VA AFFICHER TOUS LES TOURNOIS, ET PERMETTRE A L'UTILISATEUR D'EN SELECTIONNER UN POUR AFFICHER LES DETAILS
             pass
         elif choix == '3':
-            # ICI ON VA AFFICHER TOUS LES JOUEURS
+            # DONE VA AFFICHER TOUS LES JOUEURS
+            controller.show_all_players()
             pass
         elif choix == '4':
-            # DONE :  VA CREER UN JOUEUR
+            # DONE :  CREER UN JOUEUR
             controller.create_player()
             pass
         elif choix == '5':

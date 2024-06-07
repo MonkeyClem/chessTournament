@@ -13,6 +13,10 @@ class View :
         firstname = input("Entrez le prénom du joueur: ")
         birthdate = int(input("Entrez l'année de naissance du joueur: "))
         return lastname, firstname, birthdate 
+    
+    def show_all_players(self, players):
+        for i, player in enumerate(players):
+            print(f" {i + 1}, {player['lastname']} {player['firstname']} ({player['birthdate']})")
 
   
     
