@@ -1,3 +1,6 @@
+from Models.match import Match
+
+
 class View :
     def show_menu(self):
         print("\nMenu Principal")
@@ -47,7 +50,23 @@ class View :
     
     def show_all_tournaments(self, tournaments):
         for i, tournoi in enumerate(tournaments):
-            print(f"{i + 1}. {tournoi['name']} ({tournoi['beginning_date']} - {tournoi['date_fin']})")
+            print(f"{i + 1}. {tournoi['name']} ")
 
-  
-    
+    def already_started_tournament(self, tournoi):
+        # tournoi = tournoi.to_dict()
+        # tour_actuel = tournoi["tour_actuel"]
+        print(f"Le tournoi a déjà commencé. Nous en sommes actuellement au tour {tournoi['tour_actuel']}.")
+
+    def ask_resume_tournament(self):
+        resume_tournament = input("Souhaitez-vous reprendre le tournoi ? (O/N):")  
+        return resume_tournament
+
+    def ask_for_match_result(self, match):
+        match = Match.to_dict(match)
+        print("MATCH ==> ", match)
+        # print(f"Entrez le score pour le match suivant : {match['joueur1']} vs {match['joueur2']}")
+        players = match['players']
+        # print("players ==> ", players)
+        winner_name = input(f"Entrez le nom du vainqueur pour le match : {players[0]['player']['lastname']} {players[0]['player']['firstname']} vs {players[1]['player']['lastname']} {players[1]['player']['firstname']}: ")
+
+        return winner_name

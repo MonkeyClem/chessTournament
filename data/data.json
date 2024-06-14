@@ -28,13 +28,63 @@
     ],
     "tournois": [
         {
-            "name": "test",
-            "place": "test",
-            "beginning_date": "1000-10-10",
+            "name": "nom",
+            "place": "nom",
+            "beginning_date": "1111-11-11",
             "date_fin": "1111-11-11",
             "nombre_tours": 4,
-            "tour_actuel": 0,
-            "tours": [],
+            "tour_actuel": 3,
+            "previous_matchs": [
+                {
+                    "players": [
+                        {
+                            "player": {
+                                "lastname": "SMITH",
+                                "firstname": "Alice",
+                                "birthdate": 1995
+                            },
+                            "score": 2
+                        },
+                        {
+                            "player": {
+                                "lastname": "MIYAZAKI",
+                                "firstname": "Hiro",
+                                "birthdate": 1965
+                            },
+                            "score": 0
+                        }
+                    ]
+                }
+            ],
+            "tours": [
+                {
+                    "name": "tour ",
+                    "start_time": "2024-06-14 10:30:33",
+                    "end_time": null,
+                    "matches": [
+                        {
+                            "players": [
+                                {
+                                    "player": {
+                                        "lastname": "SMITH",
+                                        "firstname": "Alice",
+                                        "birthdate": 1995
+                                    },
+                                    "score": 2
+                                },
+                                {
+                                    "player": {
+                                        "lastname": "MIYAZAKI",
+                                        "firstname": "Hiro",
+                                        "birthdate": 1965
+                                    },
+                                    "score": 0
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
             "joueurs": [
                 {
                     "lastname": "SMITH",
@@ -42,59 +92,12 @@
                     "birthdate": 1995
                 },
                 {
-                    "lastname": "DOE",
-                    "firstname": "Bob",
-                    "birthdate": 2000
-                },
-                {
-                    "lastname": "JEULIN",
-                    "firstname": "Cl\u00e9ment",
-                    "birthdate": 1995
-                },
-                {
-                    "lastname": "MIYAZAKI",
-                    "firstname": "Hiro",
-                    "birthdate": 1965
-                },
-                {
-                    "lastname": "RADISLAV",
-                    "firstname": "Boris",
-                    "birthdate": 1976
-                }
-            ],
-            "description": "test"
-        },
-        {
-            "name": "second test",
-            "place": "second test",
-            "beginning_date": "1000-10-10",
-            "date_fin": "1111-11-11",
-            "nombre_tours": 2,
-            "tour_actuel": 0,
-            "tours": [],
-            "joueurs": [
-                {
-                    "lastname": "SMITH",
-                    "firstname": "Alice",
-                    "birthdate": 1995
-                },
-                {
-                    "lastname": "DOE",
-                    "firstname": "Bob",
-                    "birthdate": 2000
-                },
-                {
-                    "lastname": "JEULIN",
-                    "firstname": "Cl\u00e9ment",
-                    "birthdate": 1995
-                },
-                {
                     "lastname": "MIYAZAKI",
                     "firstname": "Hiro",
                     "birthdate": 1965
                 }
             ],
-            "description": "second tournoi de testing"
+            "description": "testcription"
         }
     ]
 }

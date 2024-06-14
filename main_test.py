@@ -1,5 +1,6 @@
 import sys
 import os
+from venv import logger
 
 sys.path.append(os.path.join(os.path.dirname(__file__)))
 
@@ -27,8 +28,12 @@ def main():
         elif choix == '2':
             # ICI ON VA AFFICHER TOUS LES TOURNOIS, ET PERMETTRE A L'UTILISATEUR
             # D'EN SELECTIONNER UN POUR AFFICHER LES DETAILS
-            controller.show_all_tournaments()
-            pass
+            select_tournament = controller.show_all_tournaments()
+            logger.debug(f"select_tournament: {select_tournament}")
+            if select_tournament:
+                controller.ask_for_tournament_start(select_tournament)
+            pass 
+
         elif choix == '3':
             # DONE : AFFICHER TOUS LES JOUEURS
             controller.show_all_players()
@@ -39,6 +44,8 @@ def main():
             pass
         elif choix == '5':
             break
+        
+        break
 
 
 main()
