@@ -30,7 +30,7 @@
         {
             "name": "test",
             "place": "test",
-            "beginning_date": "2022-12-12",
+            "start_time": "2022-12-12",
             "date_fin": "2022-12-12",
             "nombre_tours": 4,
             "tour_actuel": 1,
