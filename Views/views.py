@@ -8,7 +8,7 @@ class Views :
         user_choice = input("Sélectionnez une option : ")
         return user_choice
     
-    def show_show_menu(self) : 
+    def show_main_menu(self) : 
         print("1. Créer un tournoi")
         print("2. Afficher tous les tournois")
         print("3. Afficher tous les joueurs")

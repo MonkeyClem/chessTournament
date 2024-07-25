@@ -20,7 +20,7 @@ def main():
     controller = Controller(view)
 
     while True : 
-        user_choice = view.show_menu()
+        user_choice = view.show_main_menu()
         if user_choice == '1':
             # DONE :  CREER UN TOURNOI
             controller.create_tournoi()
