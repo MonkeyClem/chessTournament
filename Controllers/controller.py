@@ -80,7 +80,7 @@ class Controller :
         new_tournoi = Tournoi(name, location, beginning_date, end_date, first_round, description, number_of_rounds)
         new_tournoi.tours.append(first_round)
         new_tournoi.joueurs = selected_players
-        new_tournoi.tours = [first_round.to_dict()]
+        # new_tournoi.tours = [first_round.to_dict()]
         data.setdefault("tournois", []).append(new_tournoi.to_dict())
         print("new_tournoi: ", new_tournoi.to_dict())
         # sys.exit("DONE")
@@ -121,9 +121,11 @@ class Controller :
             tournoi['tour_actuel'] += 1
             tournoi = Tournoi.from_dict(tournoi)
             tournoi_dict = Tournoi.to_dict(tournoi)
-            self.save_tournament(tournoi)
+            print("tour de l'objet tournoi dans le start avant le save : ",tournoi.tours)
+            print("round of the tournament_dict before saving the tournament into start_tournoi : ",tournoi_dict["tours"])
+            self.save_tournament(tournoi_dict)
             print("Tournoi démarré avec succès ! Tour actuel : ", tournoi.tour_actuel)
-            print(f"Les matchs du premier tour sont : {tournoi_dict['tour_actuel']} ")
+            # print(f"Les matchs du premier tour sont : {tournoi_dict['tour_actuel']} ")
             # sys.exit("DONE")
 
             #TODO : lancer le tournoi, resume_tournament sera probablement suffisant    
@@ -151,6 +153,8 @@ class Controller :
     #                 # dict_player = Player.to_dict(player)
     #                 # print(dict_player)
     #     tournoi.tour_actuel += 1
+
+
     def resume_tournament(self, tournoi):
         print("Tournoi au sein du resume_tournament : ", tournoi)
         tournoi = Tournoi.from_dict(tournoi)
@@ -176,12 +180,6 @@ class Controller :
         dict_tournoi = Tournoi.to_dict(tournoi)
         self.save_tournament(dict_tournoi)
 
-   
-        
-
-
-    
-
 
     def save_tournament(self, tournoi): 
         data = self.load_data()
@@ -197,11 +195,13 @@ class Controller :
                     break
         else : 
             tournoi_dict = Tournoi.to_dict(tournoi)
+            print("tournoi_dict dans save_tournament ==> ", tournoi_dict)
             # print("tournoi.tours : ", tournoi['tours'])
             for i, t in enumerate(data['tournois']) : 
                 if t['name'] == tournoi_dict['name'] : 
                     data['tournois'][i] = tournoi_dict
                     self.save_data(data)
+
                     break
 
 

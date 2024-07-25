@@ -26,8 +26,7 @@ def main():
             controller.create_tournoi()
             pass
         elif choix == '2':
-            # ICI ON VA AFFICHER TOUS LES TOURNOIS, ET PERMETTRE A L'UTILISATEUR
-            # D'EN SELECTIONNER UN POUR AFFICHER LES DETAILS
+            # ICI ON VA AFFICHER TOUS LES TOURNOIS, ET PERMETTRE A L'UTILISATEUR D'EN SELECTIONNER UN POUR AFFICHER LES DETAILS
             select_tournament = controller.show_all_tournaments()
             logger.debug(f"select_tournament: {select_tournament}")
             if select_tournament:

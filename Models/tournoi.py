@@ -1,4 +1,5 @@
 from datetime import datetime
+import sys
 from Models.player import Player
 from Models.match import Match
 from Models.tour import Tour
@@ -17,7 +18,9 @@ class Tournoi:
         self.description = description
 
     def to_dict(self):
-        tours = self.tours if isinstance(self.tours, dict) else [Tour.to_dict(tour) for tour in self.tours]
+        ## VERIFIER OU SE TROUVE LA MODIF' DE TOURS
+        print(self.tours)
+        # tours = self.tours if isinstance(self.tours, dict) else [tour.to_dict() for tour in self.tours]
         return {
             "name": self.name,
             "place": self.place,
@@ -26,9 +29,9 @@ class Tournoi:
             "nombre_tours": self.nombre_tours,
             "tour_actuel": self.tour_actuel,
             "previous_matchs": self.previous_matchs, 
-            # "tours": [tour.to_dict() for tour in self.tours],
-            "tours": tours,
-            # "tours": [self.tours],
+            "tours": [tour.to_dict(self) for tour in self.tours],
+            # "tours": tours,
+            # "tours": Tour.to_dict([self.tours]),
             "joueurs": [player.to_dict() for player in self.joueurs],
             "description": self.description
         }
