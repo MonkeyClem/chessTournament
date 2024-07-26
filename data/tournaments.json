@@ -1,0 +1,50 @@
+{
+    "tournaments": [
+        {
+            "name": "test",
+            "location": "test",
+            "debut_date": "1111-11-11",
+            "end_date": "1111-11-11",
+            "nb_rounds": 2,
+            "nb_players": 2,
+            "current_round": 1,
+            "rounds": [
+                {
+                    "name": "Round 1",
+                    "matches": [
+                        [
+                            {
+                                "lastname": "DOE",
+                                "firstname": "Bob",
+                                "birthdate": 2000
+                            },
+                            {
+                                "lastname": "SMITH",
+                                "firstname": "Alice",
+                                "birthdate": 1995
+                            }
+                        ]
+                    ],
+                    "start_time": "2024-07-26 15:36:29",
+                    "end_time": null
+                }
+            ],
+            "players": [
+                [
+                    {
+                        "lastname": "DOE",
+                        "firstname": "Bob",
+                        "birthdate": 2000
+                    },
+                    {
+                        "lastname": "SMITH",
+                        "firstname": "Alice",
+                        "birthdate": 1995
+                    }
+                ]
+            ],
+            "description": "",
+            "previous_matches": []
+        }
+    ]
+}

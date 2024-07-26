@@ -9,8 +9,8 @@ class Views :
         return user_choice
     
     def show_main_menu(self) : 
-        print("1. Créer un tournoi")
-        print("2. Afficher tous les tournois")
+        print("1. Créer un tournament")
+        print("2. Afficher tous les tournaments")
         print("3. Afficher tous les joueurs")
         print("4. Créer un joueur")
         print("5. Quitter")

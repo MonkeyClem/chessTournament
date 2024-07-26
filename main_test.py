@@ -9,7 +9,7 @@ sys.path.append('../Controllers')
 sys.path.append('../Views')
 
 
-# from Models.tournoi import Tournoi, Player
+# from Models.tournament import Tournament, Player
 from Views.views import Views
 from Controllers.controller import Controller
 
@@ -23,7 +23,7 @@ def main():
         user_choice = view.show_main_menu()
         if user_choice == '1':
             # DONE :  CREER UN TOURNOI
-            controller.create_tournoi()
+            controller.create_tournament()
             pass
         # elif user_choice == '2':
         #     # ICI ON VA AFFICHER TOUS LES TOURNOIS, ET PERMETTRE A L'UTILISATEUR D'EN SELECTIONNER UN POUR AFFICHER LES DETAILS
