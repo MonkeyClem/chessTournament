@@ -1,5 +1,5 @@
 {
-    "joueurs": [
+    "players": [
         {
             "lastname": "SMITH",
             "firstname": "Alice",
@@ -24,9 +24,17 @@
             "lastname": "RADISLAV",
             "firstname": "Boris",
             "birthdate": 1976
+        },
+        {
+            "lastname": "MARTIN",
+            "firstname": "Jean",
+            "birthdate": 1990
+        },
+        {
+            "lastname": "DUPONT",
+            "firstname": "Paul",
+            "birthdate": 1995
         }
-    ],
-    "tournois": [
-        
-    ]
+
+        ]
 }
