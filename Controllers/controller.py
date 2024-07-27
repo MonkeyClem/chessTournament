@@ -164,6 +164,7 @@ class Controller :
         print("3. Afficher les joueurs")
         print("4. Retour")
         user_choice = input("Sélectionnez une option : ")
+        
         return user_choice
                 
             
