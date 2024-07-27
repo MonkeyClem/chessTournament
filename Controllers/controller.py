@@ -116,8 +116,8 @@ class Controller :
             print("No tournament found")
             return None
         
-        for tournament in tournaments["tournaments"]: 
-            print("\n=== Tournoi ===")
+        for i, tournament in enumerate(tournaments["tournaments"], 1) : 
+            print(f"\n=== Tournoi numéro : {i} ===")
             print(f"Nom : {tournament['name']}")
             print(f"Lieu : {tournament['location']}")
             print(f"Date de début : {tournament['debut_date']}")
@@ -142,5 +142,37 @@ class Controller :
                 for match in round_["matches"]:
                     player1, player2 = match
                     print(f"{player1['firstname']} {player1['lastname']} VS {player2['firstname']} {player2['lastname']}")
+        selected_tournament = self.select_tournament(tournaments) 
+        print("Tournament selected : ", selected_tournament["name"])
+        selected_tournament = Tournament.from_dict(selected_tournament)
+        print("Tournament selected : ", selected_tournament)
+        user_choice = self.tournament_options(selected_tournament)
+
+
+    def select_tournament(self, tournaments):
+        while True : 
+            selected_index = input("Sélectionnez un tournoi via son numéro : ")
+            try:
+                selected_tournament = tournaments["tournaments"][int(selected_index) - 1]
+                return selected_tournament
+            except (IndexError, ValueError):
+                print("\n \nVeuillez saisir un numéro de tournoi valide \n \n")
+
+    def tournament_options(self, selected_tournament):
+        print("1. Lancer le tournoi")
+        print("2. Afficher les rounds")
+        print("3. Afficher les joueurs")
+        print("4. Retour")
+        user_choice = input("Sélectionnez une option : ")
+        return user_choice
+                
+            
+
         
+
+
+
+
+        
+
     
