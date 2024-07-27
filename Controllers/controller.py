@@ -82,9 +82,9 @@ class Controller :
             match = ([selected_players[i], selected_players[i+1]])
             matches.append(match)
         print("Matchs du premier round : ", matches)
-        round_ = Round("Round 1", matches)
-        print(round_.to_dict()) 
-        return round_
+        first_round = Round("Round 1", matches)
+        print(first_round.to_dict()) 
+        return first_round
         
 
   
@@ -107,4 +107,40 @@ class Controller :
         tournament = Tournament(name, location, debut_date, end_date, nb_rounds, nb_players, current_round, players, description, rounds, previous_matches)
         self.save_tournament(tournament)
         return tournament
+    
+    def show_tournaments(self):
+        try: 
+            with open('data/tournaments.json', "r") as file : 
+                tournaments = json.load(file)
+        except FileNotFoundError:
+            print("No tournament found")
+            return None
+        
+        for tournament in tournaments["tournaments"]: 
+            print("\n=== Tournoi ===")
+            print(f"Nom : {tournament['name']}")
+            print(f"Lieu : {tournament['location']}")
+            print(f"Date de début : {tournament['debut_date']}")
+            print(f"Date de fin : {tournament['end_date']}")
+            print(f"Nombre de rounds : {tournament['nb_rounds']}")
+            print(f"Nombre de joueurs : {tournament['nb_players']}")
+            print(f"Round actuel : {tournament['current_round']}")
+            print(f"Description : {tournament['description']}")
+            print(f"Matches précédents : {len(tournament['previous_matches'])}")
+
+            print("\n=== Joueurs ===")
+            for player_list in tournament["players"]:
+                for player in player_list:
+                    print(f"{player['firstname']} {player['lastname']} ({player['birthdate']})")
+
+            print("\n=== Rounds ===")
+            for round_ in tournament["rounds"]:
+                print(f"\nNom du Round : {round_['name']}")
+                print(f"Début : {round_['start_time']}")
+                print(f"Fin : {round_['end_time'] if round_['end_time'] else 'En cours'}")
+                print("\nMatches :")
+                for match in round_["matches"]:
+                    player1, player2 = match
+                    print(f"{player1['firstname']} {player1['lastname']} VS {player2['firstname']} {player2['lastname']}")
+        
     
