@@ -147,6 +147,19 @@ class Controller :
         selected_tournament = Tournament.from_dict(selected_tournament)
         print("Tournament selected : ", selected_tournament)
         user_choice = self.tournament_options(selected_tournament)
+        print("User choice : ", user_choice)
+        if user_choice == '1':
+            print("Lancement du tournoi")
+            for round in selected_tournament.rounds:
+              print("Round : ", round)
+        elif user_choice == '2':
+            print("Affichage des rounds")
+        elif user_choice == '3':
+            print("Affichage des joueurs")
+        elif user_choice == '4':
+            print("Retour")
+        else:
+            print("Veuillez saisir une option valide")
 
 
     def select_tournament(self, tournaments):
@@ -159,12 +172,11 @@ class Controller :
                 print("\n \nVeuillez saisir un numéro de tournoi valide \n \n")
 
     def tournament_options(self, selected_tournament):
-        print("1. Lancer le tournoi")
+        print("1. Lancer / reprendre le tournoi")
         print("2. Afficher les rounds")
         print("3. Afficher les joueurs")
         print("4. Retour")
         user_choice = input("Sélectionnez une option : ")
-        
         return user_choice
                 
             
