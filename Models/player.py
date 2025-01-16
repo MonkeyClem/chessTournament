@@ -22,3 +22,24 @@ class Player:
     # @staticmethod
     # def from_dict(data):
     #     return Player(data["lastname"], data["firstname"], data["birthdate"])
+
+class PlayerScore:
+    def __init__(self, firstname, lastname, score):
+        self.firstname = firstname
+        self.lastname = lastname
+        self.score = score
+
+    def to_dict(self):
+        return {
+            "firstname": self.firstname,
+            "lastname": self.lastname,
+            "score": self.score
+        }
+    
+    @staticmethod
+    def from_dict(data):
+        return PlayerScore(
+            firstname=data["firstname"],
+            lastname=data["lastname"],
+            score=data["score"]
+        )

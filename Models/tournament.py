@@ -5,7 +5,7 @@ from Models.tour import Round
 class Tournament : 
    
 
-    def __init__(self, name, location, debut_date, end_date, nb_rounds, nb_players, current_round, players, description : str, rounds, previous_matches : list ) -> None: 
+    def __init__(self, name, location, debut_date, end_date, nb_rounds, nb_players, current_round, players, description : str, rounds, previous_matches : list, players_score ) -> None: 
         self.name = name
         self.location = location
         self.debut_date = datetime.strptime(debut_date, "%Y-%m-%d") if debut_date else datetime.now()
@@ -17,6 +17,7 @@ class Tournament :
         self.players = players if players else []
         self.description = description if description else ""
         self.previous_matches = previous_matches if previous_matches else []  
+        self.players_score = players_score if players_score else []
         
     def to_dict(self):
         return {
@@ -30,7 +31,8 @@ class Tournament :
                 "rounds": self.rounds,
                 "players": self.players,
                 "description": self.description,
-                "previous_matches": self.previous_matches
+                "previous_matches": self.previous_matches,
+                "players_score": self.players_score 
             }
     
     @classmethod
@@ -47,5 +49,6 @@ class Tournament :
             rounds=rounds,
             players=data["players"],
             description=data["description"],
-            previous_matches=data["previous_matches"]
+            previous_matches=data["previous_matches"],
+            players_score=data["players_score"] 
         )

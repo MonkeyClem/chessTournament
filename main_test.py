@@ -13,6 +13,16 @@ sys.path.append('../Views')
 from Views.views import Views
 from Controllers.controller import Controller
 
+def print_welcome_message() :
+    chess_message = """
+  ____ _                        --------- 
+/ ___| |__   ___  ___ ___      | _______ |----   _  _ _________
+| |   | '_ \\ / _ \\/ __/ __|      | |  /  / \ \| || ||  |    |
+| |___| | | |  __/\\__ \\__ \\     | |  |  |_| |  || ||  |-
+ \\____|_| |_|\\___||___/___/      |_|   \____/ |____||  |
+                           
+    """
+    print(chess_message)
 
 def main():
     # Initialiser les composants
@@ -20,25 +30,19 @@ def main():
     controller = Controller(view)
 
     while True : 
+        print_welcome_message()
         user_choice = view.show_main_menu()
         if user_choice == '1':
             # DONE :  CREER UN TOURNOI
             controller.create_tournament()
             pass
-        if user_choice == '2': 
+        elif user_choice == '2': 
             controller.show_tournaments()
-        # elif user_choice == '2':
-        #     # ICI ON VA AFFICHER TOUS LES TOURNOIS, ET PERMETTRE A L'UTILISATEUR D'EN SELECTIONNER UN POUR AFFICHER LES DETAILS
-        #     select_tournament = controller.show_all_tournaments()
-        #     logger.debug(f"select_tournament: {select_tournament}")
-        #     if select_tournament:
-        #         controller.ask_for_tournament_start(select_tournament)
-        #     pass 
 
-        # elif user_choice == '3':
-        #     # DONE : AFFICHER TOUS LES JOUEURS
-        #     controller.show_all_players()
-        #     pass
+        elif user_choice == '3':
+            # DONE : AFFICHER TOUS LES JOUEURS
+            controller.show_all_players()
+            pass
         # elif user_choice == '4':
         #     # DONE :  CREER UN JOUEUR
         #     controller.create_player()

@@ -1,4 +1,5 @@
 from datetime import datetime
+from Models.match import Match
 class Round:
     def __init__(self, name, matches, start_time=None, end_time=None):
         self.name = name
@@ -10,6 +11,7 @@ class Round:
         return {
             "name": self.name,
             "matches": self.matches,
+            # "matches": [match.to_dict() for match in self.matches],
             "start_time": self.start_time.strftime("%Y-%m-%d %H:%M:%S") if self.start_time else None,
             "end_time": self.end_time.strftime("%Y-%m-%d %H:%M:%S") if self.end_time else None
         }

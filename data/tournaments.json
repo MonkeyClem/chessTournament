@@ -1,36 +1,215 @@
 {
     "tournaments": [
         {
-            "name": "test",
-            "location": "test",
+            "name": "Test",
+            "location": "Test",
             "debut_date": "1111-11-11",
             "end_date": "1111-11-11",
-            "nb_rounds": 2,
-            "nb_players": 2,
-            "current_round": 1,
+            "nb_rounds": 3,
+            "nb_players": 6,
+            "current_round": 3,
             "rounds": [
                 {
                     "name": "Round 1",
                     "matches": [
                         [
-                            {
-                                "lastname": "DOE",
-                                "firstname": "Bob",
-                                "birthdate": 2000
-                            },
-                            {
-                                "lastname": "SMITH",
-                                "firstname": "Alice",
-                                "birthdate": 1995
-                            }
+                            [
+                                {
+                                    "lastname": "MARTIN",
+                                    "firstname": "Jean",
+                                    "birthdate": 1990
+                                },
+                                1
+                            ],
+                            [
+                                {
+                                    "lastname": "MIYAZAKI",
+                                    "firstname": "Hiro",
+                                    "birthdate": 1965
+                                },
+                                0
+                            ]
+                        ],
+                        [
+                            [
+                                {
+                                    "lastname": "RADISLAV",
+                                    "firstname": "Boris",
+                                    "birthdate": 1976
+                                },
+                                0
+                            ],
+                            [
+                                {
+                                    "lastname": "DOE",
+                                    "firstname": "Bob",
+                                    "birthdate": 2000
+                                },
+                                1
+                            ]
+                        ],
+                        [
+                            [
+                                {
+                                    "lastname": "SMITH",
+                                    "firstname": "Alice",
+                                    "birthdate": 1995
+                                },
+                                0
+                            ],
+                            [
+                                {
+                                    "lastname": "JEULIN",
+                                    "firstname": "Cl\u00e9ment",
+                                    "birthdate": 1995
+                                },
+                                1
+                            ]
                         ]
                     ],
-                    "start_time": "2024-07-26 15:36:29",
+                    "start_time": "2024-11-15 12:10:07",
+                    "end_time": null
+                },
+                {
+                    "name": "Round 2",
+                    "matches": [
+                        [
+                            [
+                                {
+                                    "firstname": "Jean",
+                                    "lastname": "MARTIN",
+                                    "score": 1
+                                },
+                                0
+                            ],
+                            [
+                                {
+                                    "firstname": "Bob",
+                                    "lastname": "DOE",
+                                    "score": 2
+                                },
+                                1
+                            ]
+                        ],
+                        [
+                            [
+                                {
+                                    "firstname": "Cl\u00e9ment",
+                                    "lastname": "JEULIN",
+                                    "score": 1
+                                },
+                                0
+                            ],
+                            [
+                                {
+                                    "firstname": "Hiro",
+                                    "lastname": "MIYAZAKI",
+                                    "score": 1
+                                },
+                                1
+                            ]
+                        ],
+                        [
+                            [
+                                {
+                                    "firstname": "Boris",
+                                    "lastname": "RADISLAV",
+                                    "score": 1
+                                },
+                                1
+                            ],
+                            [
+                                {
+                                    "firstname": "Alice",
+                                    "lastname": "SMITH",
+                                    "score": 0
+                                },
+                                0
+                            ]
+                        ]
+                    ],
+                    "start_time": "2024-11-15 12:10:34",
+                    "end_time": null
+                },
+                {
+                    "name": "Round 3",
+                    "matches": [
+                        [
+                            [
+                                {
+                                    "firstname": "Bob",
+                                    "lastname": "DOE",
+                                    "score": 2
+                                },
+                                0
+                            ],
+                            [
+                                {
+                                    "firstname": "Hiro",
+                                    "lastname": "MIYAZAKI",
+                                    "score": 1
+                                },
+                                0
+                            ]
+                        ],
+                        [
+                            [
+                                {
+                                    "firstname": "Jean",
+                                    "lastname": "MARTIN",
+                                    "score": 1
+                                },
+                                0
+                            ],
+                            [
+                                {
+                                    "firstname": "Boris",
+                                    "lastname": "RADISLAV",
+                                    "score": 1
+                                },
+                                0
+                            ]
+                        ],
+                        [
+                            [
+                                {
+                                    "firstname": "Cl\u00e9ment",
+                                    "lastname": "JEULIN",
+                                    "score": 1
+                                },
+                                0
+                            ],
+                            [
+                                {
+                                    "firstname": "Alice",
+                                    "lastname": "SMITH",
+                                    "score": 0
+                                },
+                                0
+                            ]
+                        ]
+                    ],
+                    "start_time": "2024-11-15 12:17:07",
                     "end_time": null
                 }
             ],
             "players": [
                 [
+                    {
+                        "lastname": "MARTIN",
+                        "firstname": "Jean",
+                        "birthdate": 1990
+                    },
+                    {
+                        "lastname": "MIYAZAKI",
+                        "firstname": "Hiro",
+                        "birthdate": 1965
+                    },
+                    {
+                        "lastname": "RADISLAV",
+                        "firstname": "Boris",
+                        "birthdate": 1976
+                    },
                     {
                         "lastname": "DOE",
                         "firstname": "Bob",
@@ -40,11 +219,501 @@
                         "lastname": "SMITH",
                         "firstname": "Alice",
                         "birthdate": 1995
+                    },
+                    {
+                        "lastname": "JEULIN",
+                        "firstname": "Cl\u00e9ment",
+                        "birthdate": 1995
                     }
                 ]
             ],
             "description": "",
-            "previous_matches": []
+            "previous_matches": [
+                [
+                    [
+                        [
+                            {
+                                "lastname": "MARTIN",
+                                "firstname": "Jean",
+                                "birthdate": 1990
+                            },
+                            1
+                        ],
+                        [
+                            {
+                                "lastname": "MIYAZAKI",
+                                "firstname": "Hiro",
+                                "birthdate": 1965
+                            },
+                            0
+                        ]
+                    ],
+                    [
+                        {
+                            "firstname": "Jean",
+                            "lastname": "MARTIN",
+                            "score": 1
+                        },
+                        {
+                            "firstname": "Hiro",
+                            "lastname": "MIYAZAKI",
+                            "score": 1
+                        },
+                        {
+                            "firstname": "Boris",
+                            "lastname": "RADISLAV",
+                            "score": 1
+                        },
+                        {
+                            "firstname": "Bob",
+                            "lastname": "DOE",
+                            "score": 2
+                        },
+                        {
+                            "firstname": "Alice",
+                            "lastname": "SMITH",
+                            "score": 0
+                        },
+                        {
+                            "firstname": "Cl\u00e9ment",
+                            "lastname": "JEULIN",
+                            "score": 1
+                        }
+                    ]
+                ],
+                [
+                    [
+                        [
+                            {
+                                "lastname": "RADISLAV",
+                                "firstname": "Boris",
+                                "birthdate": 1976
+                            },
+                            0
+                        ],
+                        [
+                            {
+                                "lastname": "DOE",
+                                "firstname": "Bob",
+                                "birthdate": 2000
+                            },
+                            1
+                        ]
+                    ],
+                    [
+                        {
+                            "firstname": "Jean",
+                            "lastname": "MARTIN",
+                            "score": 1
+                        },
+                        {
+                            "firstname": "Hiro",
+                            "lastname": "MIYAZAKI",
+                            "score": 1
+                        },
+                        {
+                            "firstname": "Boris",
+                            "lastname": "RADISLAV",
+                            "score": 1
+                        },
+                        {
+                            "firstname": "Bob",
+                            "lastname": "DOE",
+                            "score": 2
+                        },
+                        {
+                            "firstname": "Alice",
+                            "lastname": "SMITH",
+                            "score": 0
+                        },
+                        {
+                            "firstname": "Cl\u00e9ment",
+                            "lastname": "JEULIN",
+                            "score": 1
+                        }
+                    ]
+                ],
+                [
+                    [
+                        [
+                            {
+                                "lastname": "SMITH",
+                                "firstname": "Alice",
+                                "birthdate": 1995
+                            },
+                            0
+                        ],
+                        [
+                            {
+                                "lastname": "JEULIN",
+                                "firstname": "Cl\u00e9ment",
+                                "birthdate": 1995
+                            },
+                            1
+                        ]
+                    ],
+                    [
+                        {
+                            "firstname": "Jean",
+                            "lastname": "MARTIN",
+                            "score": 1
+                        },
+                        {
+                            "firstname": "Hiro",
+                            "lastname": "MIYAZAKI",
+                            "score": 1
+                        },
+                        {
+                            "firstname": "Boris",
+                            "lastname": "RADISLAV",
+                            "score": 1
+                        },
+                        {
+                            "firstname": "Bob",
+                            "lastname": "DOE",
+                            "score": 2
+                        },
+                        {
+                            "firstname": "Alice",
+                            "lastname": "SMITH",
+                            "score": 0
+                        },
+                        {
+                            "firstname": "Cl\u00e9ment",
+                            "lastname": "JEULIN",
+                            "score": 1
+                        }
+                    ]
+                ],
+                [
+                    [
+                        [
+                            {
+                                "firstname": "Jean",
+                                "lastname": "MARTIN",
+                                "score": 1
+                            },
+                            0
+                        ],
+                        [
+                            {
+                                "firstname": "Bob",
+                                "lastname": "DOE",
+                                "score": 2
+                            },
+                            1
+                        ]
+                    ],
+                    [
+                        {
+                            "firstname": "Jean",
+                            "lastname": "MARTIN",
+                            "score": 1
+                        },
+                        {
+                            "firstname": "Hiro",
+                            "lastname": "MIYAZAKI",
+                            "score": 1
+                        },
+                        {
+                            "firstname": "Boris",
+                            "lastname": "RADISLAV",
+                            "score": 1
+                        },
+                        {
+                            "firstname": "Bob",
+                            "lastname": "DOE",
+                            "score": 2
+                        },
+                        {
+                            "firstname": "Alice",
+                            "lastname": "SMITH",
+                            "score": 0
+                        },
+                        {
+                            "firstname": "Cl\u00e9ment",
+                            "lastname": "JEULIN",
+                            "score": 1
+                        }
+                    ]
+                ],
+                [
+                    [
+                        [
+                            {
+                                "firstname": "Cl\u00e9ment",
+                                "lastname": "JEULIN",
+                                "score": 1
+                            },
+                            0
+                        ],
+                        [
+                            {
+                                "firstname": "Hiro",
+                                "lastname": "MIYAZAKI",
+                                "score": 1
+                            },
+                            1
+                        ]
+                    ],
+                    [
+                        {
+                            "firstname": "Jean",
+                            "lastname": "MARTIN",
+                            "score": 1
+                        },
+                        {
+                            "firstname": "Hiro",
+                            "lastname": "MIYAZAKI",
+                            "score": 1
+                        },
+                        {
+                            "firstname": "Boris",
+                            "lastname": "RADISLAV",
+                            "score": 1
+                        },
+                        {
+                            "firstname": "Bob",
+                            "lastname": "DOE",
+                            "score": 2
+                        },
+                        {
+                            "firstname": "Alice",
+                            "lastname": "SMITH",
+                            "score": 0
+                        },
+                        {
+                            "firstname": "Cl\u00e9ment",
+                            "lastname": "JEULIN",
+                            "score": 1
+                        }
+                    ]
+                ],
+                [
+                    [
+                        [
+                            {
+                                "firstname": "Boris",
+                                "lastname": "RADISLAV",
+                                "score": 1
+                            },
+                            1
+                        ],
+                        [
+                            {
+                                "firstname": "Alice",
+                                "lastname": "SMITH",
+                                "score": 0
+                            },
+                            0
+                        ]
+                    ],
+                    [
+                        {
+                            "firstname": "Jean",
+                            "lastname": "MARTIN",
+                            "score": 1
+                        },
+                        {
+                            "firstname": "Hiro",
+                            "lastname": "MIYAZAKI",
+                            "score": 1
+                        },
+                        {
+                            "firstname": "Boris",
+                            "lastname": "RADISLAV",
+                            "score": 1
+                        },
+                        {
+                            "firstname": "Bob",
+                            "lastname": "DOE",
+                            "score": 2
+                        },
+                        {
+                            "firstname": "Alice",
+                            "lastname": "SMITH",
+                            "score": 0
+                        },
+                        {
+                            "firstname": "Cl\u00e9ment",
+                            "lastname": "JEULIN",
+                            "score": 1
+                        }
+                    ]
+                ]
+            ],
+            "players_score": [
+                {
+                    "firstname": "Jean",
+                    "lastname": "MARTIN",
+                    "score": 1
+                },
+                {
+                    "firstname": "Hiro",
+                    "lastname": "MIYAZAKI",
+                    "score": 1
+                },
+                {
+                    "firstname": "Boris",
+                    "lastname": "RADISLAV",
+                    "score": 1
+                },
+                {
+                    "firstname": "Bob",
+                    "lastname": "DOE",
+                    "score": 2
+                },
+                {
+                    "firstname": "Alice",
+                    "lastname": "SMITH",
+                    "score": 0
+                },
+                {
+                    "firstname": "Cl\u00e9ment",
+                    "lastname": "JEULIN",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "name": "Test Deux",
+            "location": "Test ",
+            "debut_date": "1111-11-11",
+            "end_date": "1111-11-11",
+            "nb_rounds": 3,
+            "nb_players": 6,
+            "current_round": 1,
+            "rounds": [
+                {
+                    "name": "Round 1",
+                    "matches": [
+                        [
+                            [
+                                {
+                                    "lastname": "SMITH",
+                                    "firstname": "Alice",
+                                    "birthdate": 1995
+                                },
+                                0
+                            ],
+                            [
+                                {
+                                    "lastname": "MIYAZAKI",
+                                    "firstname": "Hiro",
+                                    "birthdate": 1965
+                                },
+                                0
+                            ]
+                        ],
+                        [
+                            [
+                                {
+                                    "lastname": "DOE",
+                                    "firstname": "Bob",
+                                    "birthdate": 2000
+                                },
+                                0
+                            ],
+                            [
+                                {
+                                    "lastname": "MARTIN",
+                                    "firstname": "Jean",
+                                    "birthdate": 1990
+                                },
+                                0
+                            ]
+                        ],
+                        [
+                            [
+                                {
+                                    "lastname": "JEULIN",
+                                    "firstname": "Cl\u00e9ment",
+                                    "birthdate": 1995
+                                },
+                                0
+                            ],
+                            [
+                                {
+                                    "lastname": "RADISLAV",
+                                    "firstname": "Boris",
+                                    "birthdate": 1976
+                                },
+                                0
+                            ]
+                        ]
+                    ],
+                    "start_time": "2024-11-15 12:38:24",
+                    "end_time": null
+                }
+            ],
+            "players": [
+                [
+                    {
+                        "lastname": "SMITH",
+                        "firstname": "Alice",
+                        "birthdate": 1995
+                    },
+                    {
+                        "lastname": "MIYAZAKI",
+                        "firstname": "Hiro",
+                        "birthdate": 1965
+                    },
+                    {
+                        "lastname": "DOE",
+                        "firstname": "Bob",
+                        "birthdate": 2000
+                    },
+                    {
+                        "lastname": "MARTIN",
+                        "firstname": "Jean",
+                        "birthdate": 1990
+                    },
+                    {
+                        "lastname": "JEULIN",
+                        "firstname": "Cl\u00e9ment",
+                        "birthdate": 1995
+                    },
+                    {
+                        "lastname": "RADISLAV",
+                        "firstname": "Boris",
+                        "birthdate": 1976
+                    }
+                ]
+            ],
+            "description": "",
+            "previous_matches": [],
+            "players_score": [
+                {
+                    "firstname": "Alice",
+                    "lastname": "SMITH",
+                    "score": 0
+                },
+                {
+                    "firstname": "Hiro",
+                    "lastname": "MIYAZAKI",
+                    "score": 0
+                },
+                {
+                    "firstname": "Bob",
+                    "lastname": "DOE",
+                    "score": 0
+                },
+                {
+                    "firstname": "Jean",
+                    "lastname": "MARTIN",
+                    "score": 0
+                },
+                {
+                    "firstname": "Cl\u00e9ment",
+                    "lastname": "JEULIN",
+                    "score": 0
+                },
+                {
+                    "firstname": "Boris",
+                    "lastname": "RADISLAV",
+                    "score": 0
+                }
+            ]
         }
     ]
 }
