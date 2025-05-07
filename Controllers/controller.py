@@ -315,7 +315,7 @@ class Controller :
                 selected_tournament.previous_matches.append(played_match)
                 # Conversion de round en object JSON serializable
                 # Vérifier si chaque élément de 'selected_tournament.rounds' est un dictionnaire ou un objet (peut changer en fonction de si l'on crée ou met à jour un tournoi)
-                print("Type réel de selected_tournament.rounds[0] :", type(selected_tournament.rounds[selected_tournament.current_round - 1]))
+                # print("Type réel de selected_tournament.rounds[0] :", type(selected_tournament.rounds[selected_tournament.current_round - 1]))
             #     if selected_tournament.rounds and isinstance(selected_tournament.rounds[0], dict):
             #         # Les rounds sont déjà des dictionnaires, pas besoin de les convertir
             #         # selected_tournament.rounds[selected_tournament.current_round - 1]['end_time'] = datetime.now().strpti('%Y-%m-%d %H:%M:%S')
