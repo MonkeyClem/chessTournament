@@ -5,15 +5,15 @@ class Round:
         self.name = name
         self.matches = matches if matches else []
         self.start_time = start_time if start_time else datetime.now()
-        self.end_time = end_time
+        self.end_time = end_time if end_time else None
 
     def to_dict(self):
         return {
             "name": self.name,
             "matches": self.matches,
-            # "matches": [match.to_dict() for match in self.matches],
             "start_time": self.start_time.strftime("%Y-%m-%d %H:%M:%S") if self.start_time else None,
             "end_time": self.end_time.strftime("%Y-%m-%d %H:%M:%S") if self.end_time else None
+            # "end_time": self.end_time if self.end_time else None
         }
     
     @classmethod
@@ -23,4 +23,6 @@ class Round:
             matches=data["matches"],
             start_time=datetime.strptime(data["start_time"], "%Y-%m-%d %H:%M:%S") if data["start_time"] else None,
             end_time=datetime.strptime(data["end_time"], "%Y-%m-%d %H:%M:%S") if data["end_time"] else None
+            # end_time=datetime.strptime(data["end_time"], "%Y-%m-%d %H:%M:%S") if data.get("end_time") else None,
+
         )

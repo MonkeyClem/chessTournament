@@ -34,7 +34,16 @@
             "lastname": "DUPONT",
             "firstname": "Paul",
             "birthdate": 1995
+        },
+        {
+            "lastname": "Gherraz",
+            "firstname": "Salah",
+            "birthdate": 1900
+        },
+        {
+            "lastname": "LIONET",
+            "firstname": "Emmanuel",
+            "birthdate": 2000
         }
-
-        ]
+    ]
 }

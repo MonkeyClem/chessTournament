@@ -1,12 +1,12 @@
 {
     "tournaments": [
         {
-            "name": "Test",
-            "location": "Test",
+            "name": "test",
+            "location": "test",
             "debut_date": "1111-11-11",
             "end_date": "1111-11-11",
-            "nb_rounds": 3,
-            "nb_players": 6,
+            "nb_rounds": 2,
+            "nb_players": 4,
             "current_round": 3,
             "rounds": [
                 {
@@ -15,17 +15,17 @@
                         [
                             [
                                 {
-                                    "lastname": "MARTIN",
-                                    "firstname": "Jean",
-                                    "birthdate": 1990
+                                    "lastname": "MIYAZAKI",
+                                    "firstname": "Hiro",
+                                    "birthdate": 1965
                                 },
                                 1
                             ],
                             [
                                 {
-                                    "lastname": "MIYAZAKI",
-                                    "firstname": "Hiro",
-                                    "birthdate": 1965
+                                    "lastname": "JEULIN",
+                                    "firstname": "Cl\u00e9ment",
+                                    "birthdate": 1995
                                 },
                                 0
                             ]
@@ -33,9 +33,9 @@
                         [
                             [
                                 {
-                                    "lastname": "RADISLAV",
-                                    "firstname": "Boris",
-                                    "birthdate": 1976
+                                    "lastname": "SMITH",
+                                    "firstname": "Alice",
+                                    "birthdate": 1995
                                 },
                                 0
                             ],
@@ -47,28 +47,10 @@
                                 },
                                 1
                             ]
-                        ],
-                        [
-                            [
-                                {
-                                    "lastname": "SMITH",
-                                    "firstname": "Alice",
-                                    "birthdate": 1995
-                                },
-                                0
-                            ],
-                            [
-                                {
-                                    "lastname": "JEULIN",
-                                    "firstname": "Cl\u00e9ment",
-                                    "birthdate": 1995
-                                },
-                                1
-                            ]
                         ]
                     ],
-                    "start_time": "2024-11-15 12:10:07",
-                    "end_time": null
+                    "start_time": "2025-05-06 23:12:18",
+                    "end_time": "2025-05-07 12:20:45"
                 },
                 {
                     "name": "Round 2",
@@ -76,8 +58,8 @@
                         [
                             [
                                 {
-                                    "firstname": "Jean",
-                                    "lastname": "MARTIN",
+                                    "firstname": "Hiro",
+                                    "lastname": "MIYAZAKI",
                                     "score": 1
                                 },
                                 0
@@ -98,24 +80,6 @@
                                     "lastname": "JEULIN",
                                     "score": 1
                                 },
-                                0
-                            ],
-                            [
-                                {
-                                    "firstname": "Hiro",
-                                    "lastname": "MIYAZAKI",
-                                    "score": 1
-                                },
-                                1
-                            ]
-                        ],
-                        [
-                            [
-                                {
-                                    "firstname": "Boris",
-                                    "lastname": "RADISLAV",
-                                    "score": 1
-                                },
                                 1
                             ],
                             [
@@ -128,92 +92,21 @@
                             ]
                         ]
                     ],
-                    "start_time": "2024-11-15 12:10:34",
-                    "end_time": null
-                },
-                {
-                    "name": "Round 3",
-                    "matches": [
-                        [
-                            [
-                                {
-                                    "firstname": "Bob",
-                                    "lastname": "DOE",
-                                    "score": 2
-                                },
-                                0
-                            ],
-                            [
-                                {
-                                    "firstname": "Hiro",
-                                    "lastname": "MIYAZAKI",
-                                    "score": 1
-                                },
-                                0
-                            ]
-                        ],
-                        [
-                            [
-                                {
-                                    "firstname": "Jean",
-                                    "lastname": "MARTIN",
-                                    "score": 1
-                                },
-                                0
-                            ],
-                            [
-                                {
-                                    "firstname": "Boris",
-                                    "lastname": "RADISLAV",
-                                    "score": 1
-                                },
-                                0
-                            ]
-                        ],
-                        [
-                            [
-                                {
-                                    "firstname": "Cl\u00e9ment",
-                                    "lastname": "JEULIN",
-                                    "score": 1
-                                },
-                                0
-                            ],
-                            [
-                                {
-                                    "firstname": "Alice",
-                                    "lastname": "SMITH",
-                                    "score": 0
-                                },
-                                0
-                            ]
-                        ]
-                    ],
-                    "start_time": "2024-11-15 12:17:07",
-                    "end_time": null
+                    "start_time": "2025-05-07 12:20:45",
+                    "end_time": "2025-05-07 12:20:48"
                 }
             ],
             "players": [
                 [
-                    {
-                        "lastname": "MARTIN",
-                        "firstname": "Jean",
-                        "birthdate": 1990
-                    },
                     {
                         "lastname": "MIYAZAKI",
                         "firstname": "Hiro",
                         "birthdate": 1965
                     },
                     {
-                        "lastname": "RADISLAV",
-                        "firstname": "Boris",
-                        "birthdate": 1976
-                    },
-                    {
-                        "lastname": "DOE",
-                        "firstname": "Bob",
-                        "birthdate": 2000
+                        "lastname": "JEULIN",
+                        "firstname": "Cl\u00e9ment",
+                        "birthdate": 1995
                     },
                     {
                         "lastname": "SMITH",
@@ -221,9 +114,9 @@
                         "birthdate": 1995
                     },
                     {
-                        "lastname": "JEULIN",
-                        "firstname": "Cl\u00e9ment",
-                        "birthdate": 1995
+                        "lastname": "DOE",
+                        "firstname": "Bob",
+                        "birthdate": 2000
                     }
                 ]
             ],
@@ -233,93 +126,31 @@
                     [
                         [
                             {
-                                "lastname": "MARTIN",
-                                "firstname": "Jean",
-                                "birthdate": 1990
-                            },
-                            1
-                        ],
-                        [
-                            {
                                 "lastname": "MIYAZAKI",
                                 "firstname": "Hiro",
                                 "birthdate": 1965
                             },
-                            0
-                        ]
-                    ],
-                    [
-                        {
-                            "firstname": "Jean",
-                            "lastname": "MARTIN",
-                            "score": 1
-                        },
-                        {
-                            "firstname": "Hiro",
-                            "lastname": "MIYAZAKI",
-                            "score": 1
-                        },
-                        {
-                            "firstname": "Boris",
-                            "lastname": "RADISLAV",
-                            "score": 1
-                        },
-                        {
-                            "firstname": "Bob",
-                            "lastname": "DOE",
-                            "score": 2
-                        },
-                        {
-                            "firstname": "Alice",
-                            "lastname": "SMITH",
-                            "score": 0
-                        },
-                        {
-                            "firstname": "Cl\u00e9ment",
-                            "lastname": "JEULIN",
-                            "score": 1
-                        }
-                    ]
-                ],
-                [
-                    [
-                        [
-                            {
-                                "lastname": "RADISLAV",
-                                "firstname": "Boris",
-                                "birthdate": 1976
-                            },
-                            0
+                            1
                         ],
                         [
                             {
-                                "lastname": "DOE",
-                                "firstname": "Bob",
-                                "birthdate": 2000
+                                "lastname": "JEULIN",
+                                "firstname": "Cl\u00e9ment",
+                                "birthdate": 1995
                             },
-                            1
+                            0
                         ]
                     ],
                     [
-                        {
-                            "firstname": "Jean",
-                            "lastname": "MARTIN",
-                            "score": 1
-                        },
                         {
                             "firstname": "Hiro",
                             "lastname": "MIYAZAKI",
                             "score": 1
                         },
                         {
-                            "firstname": "Boris",
-                            "lastname": "RADISLAV",
+                            "firstname": "Cl\u00e9ment",
+                            "lastname": "JEULIN",
                             "score": 1
-                        },
-                        {
-                            "firstname": "Bob",
-                            "lastname": "DOE",
-                            "score": 2
                         },
                         {
                             "firstname": "Alice",
@@ -327,9 +158,9 @@
                             "score": 0
                         },
                         {
-                            "firstname": "Cl\u00e9ment",
-                            "lastname": "JEULIN",
-                            "score": 1
+                            "firstname": "Bob",
+                            "lastname": "DOE",
+                            "score": 2
                         }
                     ]
                 ],
@@ -345,33 +176,23 @@
                         ],
                         [
                             {
-                                "lastname": "JEULIN",
-                                "firstname": "Cl\u00e9ment",
-                                "birthdate": 1995
+                                "lastname": "DOE",
+                                "firstname": "Bob",
+                                "birthdate": 2000
                             },
                             1
                         ]
                     ],
                     [
                         {
-                            "firstname": "Jean",
-                            "lastname": "MARTIN",
-                            "score": 1
-                        },
-                        {
                             "firstname": "Hiro",
                             "lastname": "MIYAZAKI",
                             "score": 1
                         },
                         {
-                            "firstname": "Boris",
-                            "lastname": "RADISLAV",
+                            "firstname": "Cl\u00e9ment",
+                            "lastname": "JEULIN",
                             "score": 1
-                        },
-                        {
-                            "firstname": "Bob",
-                            "lastname": "DOE",
-                            "score": 2
                         },
                         {
                             "firstname": "Alice",
@@ -379,9 +200,9 @@
                             "score": 0
                         },
                         {
-                            "firstname": "Cl\u00e9ment",
-                            "lastname": "JEULIN",
-                            "score": 1
+                            "firstname": "Bob",
+                            "lastname": "DOE",
+                            "score": 2
                         }
                     ]
                 ],
@@ -389,8 +210,8 @@
                     [
                         [
                             {
-                                "firstname": "Jean",
-                                "lastname": "MARTIN",
+                                "firstname": "Hiro",
+                                "lastname": "MIYAZAKI",
                                 "score": 1
                             },
                             0
@@ -406,24 +227,14 @@
                     ],
                     [
                         {
-                            "firstname": "Jean",
-                            "lastname": "MARTIN",
-                            "score": 1
-                        },
-                        {
                             "firstname": "Hiro",
                             "lastname": "MIYAZAKI",
                             "score": 1
                         },
                         {
-                            "firstname": "Boris",
-                            "lastname": "RADISLAV",
+                            "firstname": "Cl\u00e9ment",
+                            "lastname": "JEULIN",
                             "score": 1
-                        },
-                        {
-                            "firstname": "Bob",
-                            "lastname": "DOE",
-                            "score": 2
                         },
                         {
                             "firstname": "Alice",
@@ -431,9 +242,9 @@
                             "score": 0
                         },
                         {
-                            "firstname": "Cl\u00e9ment",
-                            "lastname": "JEULIN",
-                            "score": 1
+                            "firstname": "Bob",
+                            "lastname": "DOE",
+                            "score": 2
                         }
                     ]
                 ],
@@ -443,58 +254,6 @@
                             {
                                 "firstname": "Cl\u00e9ment",
                                 "lastname": "JEULIN",
-                                "score": 1
-                            },
-                            0
-                        ],
-                        [
-                            {
-                                "firstname": "Hiro",
-                                "lastname": "MIYAZAKI",
-                                "score": 1
-                            },
-                            1
-                        ]
-                    ],
-                    [
-                        {
-                            "firstname": "Jean",
-                            "lastname": "MARTIN",
-                            "score": 1
-                        },
-                        {
-                            "firstname": "Hiro",
-                            "lastname": "MIYAZAKI",
-                            "score": 1
-                        },
-                        {
-                            "firstname": "Boris",
-                            "lastname": "RADISLAV",
-                            "score": 1
-                        },
-                        {
-                            "firstname": "Bob",
-                            "lastname": "DOE",
-                            "score": 2
-                        },
-                        {
-                            "firstname": "Alice",
-                            "lastname": "SMITH",
-                            "score": 0
-                        },
-                        {
-                            "firstname": "Cl\u00e9ment",
-                            "lastname": "JEULIN",
-                            "score": 1
-                        }
-                    ]
-                ],
-                [
-                    [
-                        [
-                            {
-                                "firstname": "Boris",
-                                "lastname": "RADISLAV",
                                 "score": 1
                             },
                             1
@@ -510,24 +269,14 @@
                     ],
                     [
                         {
-                            "firstname": "Jean",
-                            "lastname": "MARTIN",
-                            "score": 1
-                        },
-                        {
                             "firstname": "Hiro",
                             "lastname": "MIYAZAKI",
                             "score": 1
                         },
                         {
-                            "firstname": "Boris",
-                            "lastname": "RADISLAV",
+                            "firstname": "Cl\u00e9ment",
+                            "lastname": "JEULIN",
                             "score": 1
-                        },
-                        {
-                            "firstname": "Bob",
-                            "lastname": "DOE",
-                            "score": 2
                         },
                         {
                             "firstname": "Alice",
@@ -535,183 +284,33 @@
                             "score": 0
                         },
                         {
-                            "firstname": "Cl\u00e9ment",
-                            "lastname": "JEULIN",
-                            "score": 1
+                            "firstname": "Bob",
+                            "lastname": "DOE",
+                            "score": 2
                         }
                     ]
                 ]
             ],
             "players_score": [
                 {
-                    "firstname": "Jean",
-                    "lastname": "MARTIN",
-                    "score": 1
-                },
-                {
                     "firstname": "Hiro",
                     "lastname": "MIYAZAKI",
                     "score": 1
                 },
                 {
-                    "firstname": "Boris",
-                    "lastname": "RADISLAV",
+                    "firstname": "Cl\u00e9ment",
+                    "lastname": "JEULIN",
                     "score": 1
+                },
+                {
+                    "firstname": "Alice",
+                    "lastname": "SMITH",
+                    "score": 0
                 },
                 {
                     "firstname": "Bob",
                     "lastname": "DOE",
                     "score": 2
-                },
-                {
-                    "firstname": "Alice",
-                    "lastname": "SMITH",
-                    "score": 0
-                },
-                {
-                    "firstname": "Cl\u00e9ment",
-                    "lastname": "JEULIN",
-                    "score": 1
-                }
-            ]
-        },
-        {
-            "name": "Test Deux",
-            "location": "Test ",
-            "debut_date": "1111-11-11",
-            "end_date": "1111-11-11",
-            "nb_rounds": 3,
-            "nb_players": 6,
-            "current_round": 1,
-            "rounds": [
-                {
-                    "name": "Round 1",
-                    "matches": [
-                        [
-                            [
-                                {
-                                    "lastname": "SMITH",
-                                    "firstname": "Alice",
-                                    "birthdate": 1995
-                                },
-                                0
-                            ],
-                            [
-                                {
-                                    "lastname": "MIYAZAKI",
-                                    "firstname": "Hiro",
-                                    "birthdate": 1965
-                                },
-                                0
-                            ]
-                        ],
-                        [
-                            [
-                                {
-                                    "lastname": "DOE",
-                                    "firstname": "Bob",
-                                    "birthdate": 2000
-                                },
-                                0
-                            ],
-                            [
-                                {
-                                    "lastname": "MARTIN",
-                                    "firstname": "Jean",
-                                    "birthdate": 1990
-                                },
-                                0
-                            ]
-                        ],
-                        [
-                            [
-                                {
-                                    "lastname": "JEULIN",
-                                    "firstname": "Cl\u00e9ment",
-                                    "birthdate": 1995
-                                },
-                                0
-                            ],
-                            [
-                                {
-                                    "lastname": "RADISLAV",
-                                    "firstname": "Boris",
-                                    "birthdate": 1976
-                                },
-                                0
-                            ]
-                        ]
-                    ],
-                    "start_time": "2024-11-15 12:38:24",
-                    "end_time": null
-                }
-            ],
-            "players": [
-                [
-                    {
-                        "lastname": "SMITH",
-                        "firstname": "Alice",
-                        "birthdate": 1995
-                    },
-                    {
-                        "lastname": "MIYAZAKI",
-                        "firstname": "Hiro",
-                        "birthdate": 1965
-                    },
-                    {
-                        "lastname": "DOE",
-                        "firstname": "Bob",
-                        "birthdate": 2000
-                    },
-                    {
-                        "lastname": "MARTIN",
-                        "firstname": "Jean",
-                        "birthdate": 1990
-                    },
-                    {
-                        "lastname": "JEULIN",
-                        "firstname": "Cl\u00e9ment",
-                        "birthdate": 1995
-                    },
-                    {
-                        "lastname": "RADISLAV",
-                        "firstname": "Boris",
-                        "birthdate": 1976
-                    }
-                ]
-            ],
-            "description": "",
-            "previous_matches": [],
-            "players_score": [
-                {
-                    "firstname": "Alice",
-                    "lastname": "SMITH",
-                    "score": 0
-                },
-                {
-                    "firstname": "Hiro",
-                    "lastname": "MIYAZAKI",
-                    "score": 0
-                },
-                {
-                    "firstname": "Bob",
-                    "lastname": "DOE",
-                    "score": 0
-                },
-                {
-                    "firstname": "Jean",
-                    "lastname": "MARTIN",
-                    "score": 0
-                },
-                {
-                    "firstname": "Cl\u00e9ment",
-                    "lastname": "JEULIN",
-                    "score": 0
-                },
-                {
-                    "firstname": "Boris",
-                    "lastname": "RADISLAV",
-                    "score": 0
                 }
             ]
         }

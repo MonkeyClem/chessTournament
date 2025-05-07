@@ -6,6 +6,7 @@ class Match :
         self.player_1 = [player_1, 0]
         self.player_2 = [player_2, 0]
 
+## TO DO : Invoquer cette fonction aussitôt le match terminé
     def set_winner(self, winner_index): 
         if winner_index == 1 :
             self.player_1[1] = 1
@@ -25,7 +26,7 @@ class Match :
         return match
 
 
-        
+## SEE IF WE CAN USE NATIVE FUNCTIONS 
     def to_dict(self):
         return {
             "match": [
@@ -45,7 +46,6 @@ class Match :
         match.match[1][1] = score2
         return match
 
-# match = Match(Player("John", "Doe"), Player("Jane", "Doe"))
     @classmethod 
     def from_list(cls, data):
         player1 = data[0][0]

@@ -16,10 +16,11 @@ from Controllers.controller import Controller
 def print_welcome_message() :
     chess_message = """
   ____ _                        --------- 
-/ ___| |__   ___  ___ ___      | _______ |----   _  _ _________
-| |   | '_ \\ / _ \\/ __/ __|      | |  /  / \ \| || ||  |    |
-| |___| | | |  __/\\__ \\__ \\     | |  |  |_| |  || ||  |-
- \\____|_| |_|\\___||___/___/      |_|   \____/ |____||  |
+/ ___| |__   ___  ___ ___      | _______ |----   _  _ ___________
+| |   | '_ \\ / _ \\/ __/ __|     | |  /  / \ \| || ||  |  __ |
+| |   | '_ \\ / _ \\/ __/ __|      | |  /  / \ \| || ||  |  __ |
+| |___| | | |  __/\\__ \\__ \\     | |  |  |_| |  || ||  |-|   |  |
+ \\____|_| |_|\\___||___/___/      |_|   \____/ |____||__| |   |__|
                            
     """
     print(chess_message)
@@ -38,14 +39,11 @@ def main():
             pass
         elif user_choice == '2': 
             controller.show_tournaments()
-
         elif user_choice == '3':
-            # DONE : AFFICHER TOUS LES JOUEURS
             controller.show_all_players()
             pass
-        # elif user_choice == '4':
-        #     # DONE :  CREER UN JOUEUR
-        #     controller.create_player()
+        elif user_choice == '4':
+            controller.create_new_player()
             pass
         elif user_choice == '5':
             break
